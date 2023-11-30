@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_Button"
+        android:icon="@drawable/ic_search"
+        android:title="Search mangas"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/filter_Button"
+        android:icon="@drawable/ic_filter_list"
+        android:title="Filtar mangas"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.Spinner">
+    </item>
+
+</menu>

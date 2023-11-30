@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.user.UserFragment">
+
+        <TextView
+            android:id="@+id/libro_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/author_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/genre_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario3"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/publisher_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/a1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario4"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/a2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario4"
+            android:textSize="20sp" />
+    </LinearLayout>
+</layout>

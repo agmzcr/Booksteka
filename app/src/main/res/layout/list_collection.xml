@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/book_Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/test_book"/>
+
+        <TextView
+            android:id="@+id/title_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mi libro"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/book_Image"/>
+
+        <TextView
+            android:id="@+id/author_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Pedro Piedras"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/title_Value"
+            app:layout_constraintStart_toEndOf="@id/book_Image"/>
+
+        <TextView
+            android:id="@+id/genero_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Humor"
+            android:textSize="10sp"
+            app:layout_constraintTop_toBottomOf="@id/author_Value"
+            app:layout_constraintStart_toEndOf="@id/book_Image"/>
+
+        <TextView
+            android:id="@+id/publisher_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Amazon"
+            android:textSize="10sp"
+            app:layout_constraintTop_toBottomOf="@id/genero_Value"
+            app:layout_constraintStart_toEndOf="@id/book_Image"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

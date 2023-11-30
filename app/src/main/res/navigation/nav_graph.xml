@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="dev.agmzcr.booksteka.ui.home.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_reading_to_details"
+            app:destination="@+id/detailsFragment" />
+
+        <action
+            android:id="@+id/action_wish_to_details"
+            app:destination="@+id/detailsFragment" />
+
+    </fragment>
+
+   <fragment
+        android:id="@+id/readingFragment"
+        android:name="dev.agmzcr.booksteka.ui.home.reading.ReadingFragment"
+        tools:layout="@layout/fragment_reading">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/wishFragment"
+        android:name="dev.agmzcr.booksteka.ui.home.wish.WishFragment"
+        tools:layout="@layout/fragment_wish">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="dev.agmzcr.booksteka.ui.details.DetailsFragment"
+        android:label="Detalles"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="mangaId"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <argument
+            android:name="isFetchFromRemote"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="dev.agmzcr.booksteka.ui.search.SearchFragment"
+        android:label="Buscar"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_search_to_details"
+            app:destination="@+id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/collectionFragment"
+        android:name="dev.agmzcr.booksteka.ui.collection.CollectionFragment"
+        android:label="Colección"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_collection_to_details"
+            app:destination="@+id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="dev.agmzcr.booksteka.ui.user.UserFragment"
+        android:label="Usuario"
+        tools:layout="@layout/fragment_user">
+
+    </fragment>
+</navigation>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Booksteka</string>
+
+    <string-array name="HomeFragments">
+        <item>Actualmente leyendo</item>
+        <item>Lista de deseos</item>
+    </string-array>
+
+    <string-array name="Filters">
+        <item>Por Titulos</item>
+        <item>Por Nota</item>
+    </string-array>
+</resources>
